@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="20dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPoster"
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/joker_poster" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWatchLater"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Watch later"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_watch_later_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWatched"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:text="Watched"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_watched_24" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
